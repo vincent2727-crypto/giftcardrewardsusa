@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GiftCardRewardsUSA | Win Gift Cards Instantly</title>
   <link rel="icon" href="/logo.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PP5DQ773S7"></script>
@@ -20,42 +19,84 @@
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
-      padding: 0;
       background: #f7f9fc;
       color: #333;
+      padding-top: 220px; /* space for fixed header */
     }
+
+    /* Fixed Header */
     header {
-      background: #0d47a1;
-      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
       text-align: center;
-      padding: 1.5rem 0;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
-    header img {
-      height: 70px;
+
+    .banner-image img {
+      width: 100%;
+      max-height: 110px;
+      object-fit: cover;
+      border-bottom: 1px solid #ddd;
     }
-    h1 {
-      margin: 0.5rem 0 0;
+
+    .header-content {
+      padding: 10px 0;
+    }
+
+    .site-title {
       font-size: 1.8rem;
+      font-weight: 800;
+      color: #0d1b2a;
+      margin: 5px 0;
     }
-    .hero {
-      text-align: center;
-      margin-top: 1rem;
+
+    .usa-only {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #cc0000;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 8px;
     }
-    .hero img {
-      width: 90%;
-      max-width: 700px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+
+    .usa-only img {
+      width: 22px;
+      height: 14px;
+      border: 1px solid #ccc;
     }
+
+    .devices {
+      margin-top: 5px;
+    }
+
+    .devices img {
+      width: 26px;
+      height: 26px;
+      margin: 0 6px;
+      opacity: 0.8;
+      transition: all 0.2s ease;
+    }
+
+    .devices img:hover {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+
+    /* Cards layout */
     .container {
       max-width: 1100px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      margin: 0 auto;
+      padding: 1rem;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 1.5rem;
     }
+
     .card {
       background: white;
       border-radius: 10px;
@@ -64,16 +105,15 @@
       text-align: center;
       transition: transform 0.2s ease;
     }
+
     .card:hover {
       transform: translateY(-5px);
     }
+
     .card h3 {
       color: #0d47a1;
     }
-    .card p {
-      font-size: 0.95rem;
-      line-height: 1.4;
-    }
+
     .card a {
       display: inline-block;
       margin-top: 1rem;
@@ -84,17 +124,11 @@
       text-decoration: none;
       font-weight: bold;
     }
+
     .card a:hover {
       background: #ffa000;
     }
-    .flag {
-      font-size: 1.2rem;
-      margin-right: 5px;
-    }
-    .device {
-      font-size: 1rem;
-      margin-left: 8px;
-    }
+
     footer {
       text-align: center;
       background: #0d47a1;
@@ -107,75 +141,35 @@
 
 <body>
   <header>
-    <img src="/logo.png" alt="GiftCardRewardsUSA Logo" />
-    <h1>GiftCardRewardsUSA</h1>
-    <p>Claim Free Gift Cards & Rewards in the USA</p>
+    <div class="banner-image">
+      <img src="giftcards.png" alt="Gift Cards Banner" />
+    </div>
+
+    <div class="header-content">
+      <h1 class="site-title">🎁 GiftCardRewardsUSA</h1>
+      <p class="usa-only">
+        <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="USA Flag" />
+        USA Only
+      </p>
+      <div class="devices">
+        <img src="https://cdn-icons-png.flaticon.com/512/888/888857.png" alt="Android" title="Android" />
+        <img src="https://cdn-icons-png.flaticon.com/512/888/888841.png" alt="iPhone" title="iPhone" />
+        <img src="https://cdn-icons-png.flaticon.com/512/888/888879.png" alt="Desktop" title="Desktop" />
+      </div>
+    </div>
   </header>
 
-  <div class="hero">
-    <img src="/giftcards.png" alt="Gift Cards Collection" />
-  </div>
-
   <div class="container">
-    <div class="card">
-      <h3>Spend $100 towards the NFL Shop!</h3>
-      <p><span class="flag">🇺🇸</span>US only <span class="device">💻 Desktop</span></p>
-      <a href="https://singingfiles.com/show.php?l=0&u=631739&id=69461" target="_blank">Claim Now</a>
-    </div>
-
-    <div class="card">
-      <h3>Be the one to get a 7-Eleven Gift Card!</h3>
-      <p><span class="flag">🇺🇸</span>US only <span class="device">🍏 iPhone</span></p>
-      <a href="https://singingfiles.com/show.php?l=0&u=631739&id=69083" target="_blank">Enter Now</a>
-    </div>
-
-    <div class="card">
-      <h3>Claim your Mystery Box Now!</h3>
-      <p><span class="flag">🇺🇸</span>US only <span class="device">🍏 iPhone</span></p>
-      <a href="https://singingfiles.com/show.php?l=0&u=631739&id=70936" target="_blank">Try Now</a>
-    </div>
-
-    <div class="card">
-      <h3>See how you can get a Lululemon Gift Card Now!</h3>
-      <p><span class="flag">🇺🇸</span>US only <span class="device">🤖 Android</span></p>
-      <a href="https://singingfiles.com/show.php?l=0&u=631739&id=72494" target="_blank">Get Started</a>
-    </div>
-
-    <div class="card">
-      <h3>Have a chance to get a $100 Hulu Gift Card!</h3>
-      <p><span class="flag">🇺🇸</span>US only <span class="device">🤖 Android</span></p>
-      <a href="https://singingfiles.com/show.php?l=0&u=631739&id=71508" target="_blank">Join Now</a>
-    </div>
-
-    <div class="card">
-      <h3>See how you can get a $100 Xbox Gift Card!</h3>
-      <p><span class="flag">🇺🇸</span>US only <span class="device">🤖 Android</span></p>
-      <a href="https://singingfiles.com/show.php?l=0&u=631739&id=72074" target="_blank">Join Now</a>
-    </div>
-
-    <div class="card">
-      <h3>Check out your Mystery Samples Box Now!</h3>
-      <p><span class="flag">🇺🇸</span>US only <span class="device">🤖 Android</span></p>
-      <a href="https://singingfiles.com/show.php?l=0&u=631739&id=70458" target="_blank">Claim Now</a>
-    </div>
-
-    <div class="card">
-      <h3>Start earning cash with EarnIn!</h3>
-      <p><span class="flag">🇺🇸</span>US only <span class="device">🤖 Android</span></p>
-      <a href="https://singingfiles.com/show.php?l=0&u=631739&id=72827" target="_blank">Start Earning</a>
-    </div>
-
-    <div class="card">
-      <h3>Enter for a 7-Eleven Gift Card Now!</h3>
-      <p><span class="flag">🇺🇸</span>US only <span class="device">💻 Desktop</span></p>
-      <a href="https://singingfiles.com/show.php?l=0&u=631739&id=69081" target="_blank">Enter Now</a>
-    </div>
-
-    <div class="card">
-      <h3>Claim your $100 Wendy's Gift Card Now!</h3>
-      <p><span class="flag">🇺🇸</span>US only <span class="device">🤖 Android</span></p>
-      <a href="https://singingfiles.com/show.php?l=0&u=631739&id=71614" target="_blank">Claim Now</a>
-    </div>
+    <div class="card"><h3>Spend $100 towards the NFL Shop!</h3><p>USA Visitors only • Desktop</p><a href="https://singingfiles.com/show.php?l=0&u=631739&id=69461" target="_blank">Claim Now</a></div>
+    <div class="card"><h3>Be the one to get a 7-Eleven Gift Card!</h3><p>US only • Apple iOS</p><a href="https://singingfiles.com/show.php?l=0&u=631739&id=69083" target="_blank">Enter Now</a></div>
+    <div class="card"><h3>Claim your Mystery Box Now!</h3><p>US only • Apple iOS</p><a href="https://singingfiles.com/show.php?l=0&u=631739&id=70936" target="_blank">Try Now</a></div>
+    <div class="card"><h3>See how you can get a Lululemon Gift Card Now!</h3><p>US only • Android</p><a href="https://singingfiles.com/show.php?l=0&u=631739&id=72494" target="_blank">Get Started</a></div>
+    <div class="card"><h3>Have a chance to get a $100 Hulu Gift Card!</h3><p>US only • Android</p><a href="https://singingfiles.com/show.php?l=0&u=631739&id=71508" target="_blank">Join Now</a></div>
+    <div class="card"><h3>See how you can get a $100 Xbox Gift Card!</h3><p>US only • Android</p><a href="https://singingfiles.com/show.php?l=0&u=631739&id=72074" target="_blank">Join Now</a></div>
+    <div class="card"><h3>Check out your Mystery Samples Box Now!</h3><p>US only • Android</p><a href="https://singingfiles.com/show.php?l=0&u=631739&id=70458" target="_blank">Claim Now</a></div>
+    <div class="card"><h3>Start earning cash with EarnIn!</h3><p>US only • Android</p><a href="https://singingfiles.com/show.php?l=0&u=631739&id=72827" target="_blank">Start Earning</a></div>
+    <div class="card"><h3>Enter for a 7-Eleven Gift Card Now!</h3><p>US only • Desktop</p><a href="https://singingfiles.com/show.php?l=0&u=631739&id=69081" target="_blank">Enter Now</a></div>
+    <div class="card"><h3>Claim your $100 Wendy's Gift Card Now!</h3><p>US only • Android</p><a href="https://singingfiles.com/show.php?l=0&u=631739&id=71614" target="_blank">Claim Now</a></div>
   </div>
 
   <footer>
